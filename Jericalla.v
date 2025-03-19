@@ -61,7 +61,7 @@ module Jericalla_tb;
 
     initial begin
 		#100;
-        instruction = 17'b1_0100_0110_0000_0001; 
+        	instruction = 17'b1_0100_0110_0000_0001; 
 		#100;
 		instruction = 17'b1_0100_0110_0001_0010;
 		#100;
