@@ -1,4 +1,4 @@
-module alub(
+module ALU(
     input  [31:0] data1,     
     input  [31:0] data2,      
     input  [3:0] op,  
