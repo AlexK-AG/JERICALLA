@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module ROM (
 	input [3:0] dir1R2,
 	input [3:0] dir2R2,
@@ -7,14 +8,10 @@ module ROM (
 
 reg [31:0]memRom[0:15];
 
-module ROM_TB ();
-
-	initial
-	begin
-		#100;
-		$readmemb("datos.txt", memRom);
-	end
-endmodule
+initial begin
+	#100;
+	$readmemb("datos.txt", memRom);
+end
 
     always @(*) begin
         data1 = memRom[dir1R2]; 
